@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 案例 </title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="progress.plugin.js"></script>
+    <style>
+    .warp {
+        position: relative;
+        margin: 50px 100px;
+    }
+
+    .line {
+        width: 500px;
+        height: 5px;
+        background: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .step {
+        width: 0px;
+        height: 5px;
+        background: blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flag {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid red;
+        position: absolute;
+        top: -8px;
+        background: #fff;
+        z-index: 10;
+    }
+
+    .next {
+        margin-top: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <div class='warp'>
+        <div class="line"></div>
+        <p class="step"></p>
+        <button class='next'>下一步</button>
+        <button class='prev'>上一步</button>
+    </div> -->
+
+    <script>
+
+    	$.progress({
+    		
+    		step : 5,
+    		line_w : 300,
+    	});
+    </script>
+</body>
+
+</html>
